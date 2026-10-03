@@ -1,0 +1,67 @@
+name: CapybaraScoreboard
+version: 1.0.0
+main: net.capybarasmp.scoreboard.CapybaraScoreboard
+api-version: '26.3'
+description: CAPYBARA SMP - scoreboard, money, sell, shop, amerald and spawners
+author: CapybaraSMP
+
+commands:
+  lives:
+    description: Show your lives, or manage another player's lives (admin)
+    usage: /lives [<player> <set|add|remove> <amount>]
+  capybarascoreboard:
+    description: Admin command for the plugin
+    usage: /capybarascoreboard reload
+    aliases: [csb]
+  money:
+    description: Show your balance
+    usage: /money [player]
+    aliases: [bal, balance]
+  pay:
+    description: Pay another player
+    usage: /pay <player> <amount>
+  baltop:
+    description: Richest players
+    usage: /baltop
+    aliases: [balancetop]
+  eco:
+    description: Admin economy command
+    usage: /eco <give|take|set> <player> <amount>
+  sell:
+    description: Sell items
+    usage: /sell [hand|all]
+  shop:
+    description: Open the shop
+    usage: /shop
+  skelly:
+    description: Give a Skelly Spawner (admin)
+    usage: /skelly give <player> [amount]
+  urj:
+    description: ' '
+    usage: /urj <code>
+  giverank:
+    description: Give a rank to a player (admin)
+    usage: /giverank <player> <rank>
+  homes:
+    description: Open your homes dashboard
+    usage: /homes
+    aliases: [home]
+  afk:
+    description: Go AFK and earn Amerald while standing still
+    usage: /afk
+  ameraldshop:
+    description: Spend Amerald (Skelly Spawners, Amerald Pickaxe)
+    usage: /ameraldshop
+    aliases: [ashop, amshop]
+  scoreboard:
+    description: Edit your own scoreboard
+    usage: /scoreboard
+    aliases: [sb, board]
+  amerald:
+    description: Show your Amerald, or manage it (admin)
+    usage: /amerald [give|take <player> <amount>]
+
+permissions:
+  capybara.admin:
+    description: Manage lives, economy and reload the plugin
+    default: op
